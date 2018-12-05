@@ -18,7 +18,7 @@
         <module>initpassion-disruptor</module>
         <module>initpassion-dubbo</module>
         <module>initpassion-hbase</module>
-        <module>initpassion-mq</module>
+        <module>initpassion-kafka</module>
         <module>initpassion-quartz</module>
         <module>initpassion-redis</module>
         <module>initpassion-service</module>
