@@ -45,6 +45,12 @@
             <artifactId>spring-kafka-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.netease.music</groupId>
+            <artifactId>spring-boot-kafka</artifactId>
+            <version>0.3-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
