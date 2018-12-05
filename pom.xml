@@ -26,6 +26,7 @@
         <module>initpassion-web</module>
         <module>initpassion-shiro</module>
         <module>initpassion-spi</module>
+        <module>initpassion-docker</module>
     </modules>
 
     <parent>
