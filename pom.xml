@@ -28,6 +28,7 @@
         <module>initpassion-spi</module>
         <module>initpassion-docker</module>
         <module>initpassion-blog</module>
+        <module>initpassion-cloud</module>
     </modules>
 
     <parent>
