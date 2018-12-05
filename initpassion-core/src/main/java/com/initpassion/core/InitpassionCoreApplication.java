@@ -1,10 +1,12 @@
 package com.initpassion.core;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -15,11 +17,18 @@ public class InitpassionCoreApplication {
 
     public int illegalArgumentCount = 0;
 
-    public static void main(String[] args) {
+    private static final Map<String, String> cache = Maps.newHashMap();
+    static {
+        cache.put("age", "age");
+        cache.put("user", "user");
+        cache.put("pass", "pass");
+    }
 
-        InitpassionCoreApplication appication = new InitpassionCoreApplication();
-        while (true) {
-            appication.run();
+    public static void main(String[] args) throws InterruptedException {
+        InitpassionCoreApplication application = new InitpassionCoreApplication();
+        boolean run = true;
+        while (run) {
+            application.run();
             TimeUnit.SECONDS.sleep(1);
         }
     }
@@ -51,7 +60,6 @@ public class InitpassionCoreApplication {
             illegalArgumentCount++;
             throw new IllegalArgumentException("number is: " + number + ", need >= 2");
         }
-
         List<Integer> result = Lists.newArrayList();
         int i = 2;
         while (i <= number) {
@@ -63,7 +71,6 @@ public class InitpassionCoreApplication {
                 i++;
             }
         }
-
         return result;
     }
 
