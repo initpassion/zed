@@ -29,6 +29,7 @@
         <module>initpassion-docker</module>
         <module>initpassion-blog</module>
         <module>initpassion-cloud</module>
+        <module>initpassion-netty</module>
     </modules>
 
     <parent>
