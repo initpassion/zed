@@ -29,24 +29,26 @@ public class TaskThread implements Callable<Boolean> {
     public Boolean call() throws InterruptedException {
         long start = System.currentTimeMillis();
         boolean run = true;
+        boolean flag = true;
         while (run) {
-            Thread.currentThread().sleep(2000);
             System.out.println("this uuid has running" + task.getUuid() + "-threadName-" + task.getTaskName());
             long end = System.currentTimeMillis();
             // 程序默认执行六分钟
-            if (end - start >= 1 * 60 * 1000) {
+            if (end - start >= 10 * 1000 && flag) {
                 task.setStatus(CANCELING);
-                /**
-                 * 任务被取消
-                 */
-                if (Thread.currentThread().isInterrupted()) {
-                    System.out.println("PrimerTask.call： cancel me ? why?");
-                    return false;
-                }
+                flag = false;
             }
             // 程序默认执行六分钟
             if (end - start >= 10 * 60 * 1000) {
                 run = false;
+            }
+
+            /**
+             * 任务被取消
+             */
+            if (Thread.currentThread().isInterrupted()) {
+                System.out.println("PrimerTask.call： cancel me ? why?");
+                return false;
             }
 
         }

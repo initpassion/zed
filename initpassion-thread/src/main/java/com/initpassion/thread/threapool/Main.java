@@ -52,18 +52,18 @@ public class Main {
                 for (Map.Entry<String, Task> task : tasks.entrySet()) {
                     Task t = task.getValue();
                     if (t.getStatus() == CREATED) {
-                        Future<?> future = exec.submit(new TaskThread(t));
+                        Future<Boolean> future = exec.submit(new TaskThread(t));
                         futureMap.put(t.getUuid(), future);
                     } else if (t.getStatus() == CANCELING) {
                         Future future = null;
                         try {
                             future = futureMap.get(t.getUuid());
+                            cancelTask(future, 1000);
                             if (future != null || future.isCancelled()) {
                                 tasks.remove(t.getUuid());
-                                futureMap.remove(t.getUuid());
                             }
                         } finally {
-                            future.cancel(true);
+
                         }
                     }
                 }
@@ -73,6 +73,19 @@ public class Main {
         // 从现在开始每间隔 1s 计划执行一个任务
         timer.schedule(timerTask, 0, 1000);
         System.out.println("finished");
+    }
+
+    private static void cancelTask(final Future<?> future, final int delay) {
+        Runnable cancellation = () -> {
+            try {
+                Thread.sleep(delay);
+                future.cancel(true);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace(System.err);
+            }
+        };
+
+        new Thread(cancellation).start();
     }
 
 }
