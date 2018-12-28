@@ -35,7 +35,6 @@ public class CancelMain {
         for (Map.Entry<String, Future> map : futureMap.entrySet()) {
             if (Integer.valueOf(map.getKey()) < 3) {
                 Future threadFuture = map.getValue();
-                Thread.sleep(1000);
                 threadFuture.cancel(true);
             }
         }
