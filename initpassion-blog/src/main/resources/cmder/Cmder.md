@@ -25,6 +25,13 @@
 -  vim /Users/tushenghong01/.ssh/config,输入以下配置
 
   - ```
+    Host github.com
+    User initpassion
+    Hostname ssh.github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/initpassion
+    Port 443
+    
     Host jumper
        #nisp-jumper1.hz.163.org
        Hostname 123.58.180.66
