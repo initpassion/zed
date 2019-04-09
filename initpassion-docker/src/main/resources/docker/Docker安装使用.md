@@ -46,3 +46,16 @@ sudo systemctl enable docker
 docker version
 ```
 
+## docker删除容器
+```
+docker rm dockerId
+
+```
+
+## docker删除镜像
+```
+docker rmi imgaeId
+```
+
+```
+
