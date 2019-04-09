@@ -51,6 +51,6 @@ docker exec -it pwc-mysql /bin/bash
 ## 执行命令进入数据库终端
 
 ```
-mysql -hlocalhost -P3306 -uroot -pmysql_root
+mysql -hlocalhost -P3306 -uroot -p123456
 ```
 
