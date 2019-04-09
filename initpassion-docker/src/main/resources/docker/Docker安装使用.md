@@ -56,6 +56,11 @@ docker rm dockerId
 ```
 docker rmi imgaeId
 ```
+## rmi -f 发现镜像不存在时
 
-```
+- 切换到root用户
+- ```service docker stop```
+- ```rm -rf /var/lib/docker```
+- ```重启 sudo service docker restart```
+- 以上步骤会删除所有的镜像
 
