@@ -1,0 +1,6 @@
+logging:
+  config: classpath:log4j2.yml
+server:
+  #端口号
+  port: 8888
+

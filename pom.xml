@@ -31,6 +31,7 @@
         <module>initpassion-cloud</module>
         <module>initpassion-netty</module>
         <module>initpassion-thread</module>
+        <module>initpassion-caffeine</module>
     </modules>
 
     <parent>

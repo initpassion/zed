@@ -1,0 +1,147 @@
+2019-05-11 13:42:29.252 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCaffeineApplication on initpassiondeMacBook-Pro.local with PID 95542 (/Users/initpassion/Workspace/zed/initpassion-caffeine/target/classes started by initpassion in /Users/initpassion/Workspace/zed)
+2019-05-11 13:42:29.256 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-05-11 13:42:29.285 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-11 13:42:29.285 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-11 13:42:29.965 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-05-11 13:42:29.979 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-11 13:42:29.988 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-05-11 13:42:29.988 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-11 13:42:29.993 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/initpassion/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-11 13:42:30.045 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-05-11 13:42:30.046 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2019-05-11 13:42:30.206 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:42:30.342 - WARN  [  restartedMain] b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server
+2019-05-11 13:42:30.360 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-05-11 13:42:30.381 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-05-11 13:42:30.410 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Pausing ProtocolHandler ["http-nio-8080"]
+2019-05-11 13:42:30.410 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2019-05-11 13:42:30.417 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-05-11 13:42:30.418 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Stopping ProtocolHandler ["http-nio-8080"]
+2019-05-11 13:42:30.418 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Destroying ProtocolHandler ["http-nio-8080"]
+2019-05-11 13:42:30.420 - INFO  [  restartedMain] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-05-11 13:42:30.426 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:44:03.746 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCaffeineApplication on initpassiondeMacBook-Pro.local with PID 95566 (/Users/initpassion/Workspace/zed/initpassion-caffeine/target/classes started by initpassion in /Users/initpassion/Workspace/zed)
+2019-05-11 13:44:03.751 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-05-11 13:44:03.817 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-11 13:44:03.817 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-11 13:44:04.561 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-05-11 13:44:04.573 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:44:04.580 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-05-11 13:44:04.581 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-11 13:44:04.586 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/initpassion/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-11 13:44:04.636 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-05-11 13:44:04.636 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 819 ms
+2019-05-11 13:44:04.769 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:44:04.920 - WARN  [  restartedMain] b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server
+2019-05-11 13:44:04.940 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:44:04.964 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-05-11 13:44:04.974 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-05-11 13:44:04.978 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCaffeineApplication in 1.509 seconds (JVM running for 2.24)
+2019-05-11 13:44:29.330 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-11 13:44:29.330 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-05-11 13:44:29.336 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 6 ms
+2019-05-11 13:46:12.516 - INFO  [       Thread-9] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:46:15.188 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCaffeineApplication on initpassiondeMacBook-Pro.local with PID 95590 (/Users/initpassion/Workspace/zed/initpassion-caffeine/target/classes started by initpassion in /Users/initpassion/Workspace/zed)
+2019-05-11 13:46:15.216 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-05-11 13:46:15.243 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-11 13:46:15.243 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-11 13:46:15.903 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-05-11 13:46:15.916 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:46:15.923 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-05-11 13:46:15.924 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-11 13:46:15.929 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/initpassion/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-11 13:46:15.981 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-05-11 13:46:15.981 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 737 ms
+2019-05-11 13:46:16.144 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:46:16.299 - WARN  [  restartedMain] b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server
+2019-05-11 13:46:16.319 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:46:16.344 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-05-11 13:46:16.354 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-05-11 13:46:16.357 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCaffeineApplication in 1.386 seconds (JVM running for 2.363)
+2019-05-11 13:46:20.896 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-11 13:46:20.897 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-05-11 13:46:20.901 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 4 ms
+2019-05-11 13:48:01.363 - INFO  [       Thread-2] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:48:01.513 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCaffeineApplication on initpassiondeMacBook-Pro.local with PID 95590 (/Users/initpassion/Workspace/zed/initpassion-caffeine/target/classes started by initpassion in /Users/initpassion/Workspace/zed)
+2019-05-11 13:48:01.514 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-05-11 13:48:01.660 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-05-11 13:48:01.661 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:48:01.662 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-05-11 13:48:01.662 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-11 13:48:01.668 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-05-11 13:48:01.668 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 153 ms
+2019-05-11 13:48:01.705 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:48:01.732 - WARN  [  restartedMain] b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server
+2019-05-11 13:48:01.741 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:48:01.742 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-05-11 13:48:01.744 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-05-11 13:48:01.744 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCaffeineApplication in 0.258 seconds (JVM running for 107.75)
+2019-05-11 13:48:01.745 - INFO  [  restartedMain] EvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-05-11 13:48:14.824 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-11 13:48:14.824 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-05-11 13:48:14.829 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 5 ms
+2019-05-11 13:48:37.935 - INFO  [      Thread-19] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:48:40.321 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCaffeineApplication on initpassiondeMacBook-Pro.local with PID 95624 (/Users/initpassion/Workspace/zed/initpassion-caffeine/target/classes started by initpassion in /Users/initpassion/Workspace/zed)
+2019-05-11 13:48:40.355 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-05-11 13:48:40.392 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-11 13:48:40.393 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-11 13:48:41.127 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-05-11 13:48:41.140 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:48:41.147 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-05-11 13:48:41.148 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-11 13:48:41.153 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/initpassion/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-11 13:48:41.203 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-05-11 13:48:41.203 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 810 ms
+2019-05-11 13:48:41.331 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:48:41.476 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-05-11 13:48:41.494 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:48:41.518 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-05-11 13:48:41.527 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-05-11 13:48:41.530 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCaffeineApplication in 1.499 seconds (JVM running for 2.249)
+2019-05-11 13:48:48.158 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-11 13:48:48.158 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-05-11 13:48:48.162 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 4 ms
+2019-05-11 13:49:28.389 - INFO  [      Thread-12] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:49:31.448 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCaffeineApplication on initpassiondeMacBook-Pro.local with PID 95639 (/Users/initpassion/Workspace/zed/initpassion-caffeine/target/classes started by initpassion in /Users/initpassion/Workspace/zed)
+2019-05-11 13:49:31.452 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-05-11 13:49:31.478 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-11 13:49:31.478 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-11 13:49:32.087 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-05-11 13:49:32.101 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:49:32.108 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-05-11 13:49:32.109 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-11 13:49:32.114 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/initpassion/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-11 13:49:32.171 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-05-11 13:49:32.171 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 692 ms
+2019-05-11 13:49:32.315 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:49:32.412 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-05-11 13:49:32.473 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:49:32.497 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-05-11 13:49:32.506 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-05-11 13:49:32.509 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCaffeineApplication in 1.27 seconds (JVM running for 1.997)
+2019-05-11 13:49:43.838 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-11 13:49:43.838 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-05-11 13:49:43.842 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 3 ms
+2019-05-11 13:51:20.102 - INFO  [      Thread-13] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:51:23.953 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCaffeineApplication on initpassiondeMacBook-Pro.local with PID 95661 (/Users/initpassion/Workspace/zed/initpassion-caffeine/target/classes started by initpassion in /Users/initpassion/Workspace/zed)
+2019-05-11 13:51:23.958 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-05-11 13:51:23.988 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-11 13:51:23.988 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-11 13:51:24.677 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-05-11 13:51:24.691 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:51:24.698 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-05-11 13:51:24.699 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-11 13:51:24.704 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/initpassion/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-11 13:51:24.765 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-05-11 13:51:24.765 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+2019-05-11 13:51:24.922 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-11 13:51:25.019 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-05-11 13:51:25.080 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-05-11 13:51:25.105 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-05-11 13:51:25.115 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-05-11 13:51:25.118 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCaffeineApplication in 1.44 seconds (JVM running for 2.486)
+2019-05-11 13:51:50.490 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-11 13:51:50.490 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-05-11 13:51:50.494 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 4 ms
