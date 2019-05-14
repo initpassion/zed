@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.initpassion.cache.dao.GoodsInfoDAO">
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.initpassion.cache.bo.GoodsInfo">
+        insert into goods_info (goods_name, goods_code, goods_desc, goods_price, goods_status, create_time, update_time, creator, operator)
+        values (#{goodsName}, #{goodsCode}, #{goodsDesc}, #{goodsPrice}, #{goodsStatus}, #{createTime}, #{updateTime}, #{creator}, #{operator})
+    </insert>
+
+    <insert id="batchInsert" parameterType="java.util.List">
+        insert into goods_info (goods_name, goods_code, goods_desc, goods_price, goods_status, create_time, update_time,
+        creator, operator)
+        VALUES
+        <foreach collection="goodsList" item="item" index="index" separator=",">
+            (#{item.goodsName}, #{item.goodsCode}, #{item.goodsDesc}, #{item.goodsPrice}, #{item.goodsStatus},
+            #{item.createTime}, #{item.updateTime}, #{item.creator}, #{item.operator})
+        </foreach>
+    </insert>
+
+</mapper>
