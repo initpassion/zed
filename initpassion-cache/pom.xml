@@ -12,6 +12,7 @@
     <artifactId>initpassion-cache</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>initpassion-cache</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
