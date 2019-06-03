@@ -32,6 +32,8 @@
         <module>initpassion-netty</module>
         <module>initpassion-thread</module>
         <module>initpassion-caffeine</module>
+        <module>initpassion-cache</module>
+
     </modules>
 
     <parent>
