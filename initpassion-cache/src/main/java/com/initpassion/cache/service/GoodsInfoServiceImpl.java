@@ -28,4 +28,9 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
     public boolean insert(GoodsInfo goodsInfo) {
         return goodsInfoDAO.insert(goodsInfo) > 0;
     }
+
+    @Override
+    public GoodsInfo getByGoodCode(String goodCode) {
+        return goodsInfoDAO.getByGoodCode(goodCode);
+    }
 }

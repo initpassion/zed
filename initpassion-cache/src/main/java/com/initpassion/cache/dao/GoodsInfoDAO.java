@@ -23,4 +23,6 @@ public interface GoodsInfoDAO {
     int insert(GoodsInfo goodsInfo);
 
     int batchInsert(List<GoodsInfo> goodsInfoList);
+
+    GoodsInfo getByGoodCode(String goodCode);
 }

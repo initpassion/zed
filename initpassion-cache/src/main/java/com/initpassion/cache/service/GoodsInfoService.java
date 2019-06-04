@@ -15,4 +15,12 @@ import com.initpassion.cache.bo.GoodsInfo;
 public interface GoodsInfoService {
 
     boolean insert(GoodsInfo goodsInfo);
+
+    /**
+     * code查询
+     * 
+     * @param goodCode
+     * @return
+     */
+    GoodsInfo getByGoodCode(String goodCode);
 }

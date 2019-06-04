@@ -2,6 +2,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.initpassion.cache.dao.GoodsInfoDAO">
 
+    <sql id="AllField">
+       id, goods_name, goods_code, goods_desc, goods_price, goods_status, create_time, update_time, creator, operator
+    </sql>
     <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.initpassion.cache.bo.GoodsInfo">
         insert into goods_info (goods_name, goods_code, goods_desc, goods_price, goods_status, create_time, update_time, creator, operator)
         values (#{goodsName}, #{goodsCode}, #{goodsDesc}, #{goodsPrice}, #{goodsStatus}, #{createTime}, #{updateTime}, #{creator}, #{operator})
@@ -16,5 +19,11 @@
             #{item.createTime}, #{item.updateTime}, #{item.creator}, #{item.operator})
         </foreach>
     </insert>
+
+    <select id="getByGoodCode" resultType="com.initpassion.cache.bo.GoodsInfo">
+        select
+        <include refid="AllField"/>
+        from goods_info where goods_code = #{goodCode}
+    </select>
 
 </mapper>
