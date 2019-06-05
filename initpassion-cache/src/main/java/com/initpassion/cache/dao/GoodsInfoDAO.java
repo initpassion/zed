@@ -25,4 +25,6 @@ public interface GoodsInfoDAO {
     int batchInsert(List<GoodsInfo> goodsInfoList);
 
     GoodsInfo getByGoodCode(String goodCode);
+
+    List<GoodsInfo> pageQuery();
 }

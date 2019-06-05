@@ -45,7 +45,9 @@ public class GuavaCacheManager {
                 // 使用SoftReference对象封装value, 使得内存不足时，自动回收
                 .softValues()
                 // 定义缓存对象失效的时间精度为纳秒级
-                .ticker(Ticker.systemTicker()).build(new CacheLoader<String, GoodsInfo>() {
+                .ticker(Ticker.systemTicker())
+                // 数据的加载
+                .build(new CacheLoader<String, GoodsInfo>() {
                     @Override
                     public GoodsInfo load(String goodCode) {
                         return goodsInfoService.getByGoodCode(goodCode);

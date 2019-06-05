@@ -26,4 +26,10 @@
         from goods_info where goods_code = #{goodCode}
     </select>
 
+    <select id="pageQuery" resultType="com.initpassion.cache.bo.GoodsInfo">
+        select
+        <include refid="AllField"/>
+        from goods_info
+    </select>
+
 </mapper>

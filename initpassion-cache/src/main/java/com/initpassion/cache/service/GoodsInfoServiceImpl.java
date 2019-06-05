@@ -10,6 +10,8 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.initpassion.cache.bo.GoodsInfo;
 import com.initpassion.cache.dao.GoodsInfoDAO;
 
@@ -32,5 +34,11 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
     @Override
     public GoodsInfo getByGoodCode(String goodCode) {
         return goodsInfoDAO.getByGoodCode(goodCode);
+    }
+
+    @Override
+    public Page<GoodsInfo> pageQuery(Integer pageNum, Integer pageSize) {
+        Page<GoodsInfo> page = PageHelper.startPage(pageNum, pageSize).doSelectPage(() -> goodsInfoDAO.pageQuery());
+        return page;
     }
 }

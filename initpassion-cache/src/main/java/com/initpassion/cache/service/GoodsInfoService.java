@@ -6,6 +6,7 @@
 
 package com.initpassion.cache.service;
 
+import com.github.pagehelper.Page;
 import com.initpassion.cache.bo.GoodsInfo;
 
 /**
@@ -23,4 +24,6 @@ public interface GoodsInfoService {
      * @return
      */
     GoodsInfo getByGoodCode(String goodCode);
+
+    Page<GoodsInfo> pageQuery(Integer pageNum, Integer pageSize);
 }
