@@ -38,8 +38,8 @@ public class GoodsInfoController {
     }
 
     @RequestMapping(value = "pageQuery")
-    public void pageQuery() {
-        Page<GoodsInfo> page = goodsInfoService.pageQuery(1, 1);
+    public void pageQuery(Integer pageNum, Integer pageSize) {
+        Page<GoodsInfo> page = goodsInfoService.pageQuery(pageNum, pageSize);
         page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(cacheManager::getByCode);
     }
 }

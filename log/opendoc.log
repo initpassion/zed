@@ -1,265 +1,84 @@
-2019-06-05 15:03:41.520 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 17464 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 15:03:41.609 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 15:03:41.986 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 15:03:41.986 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 15:03:44.029 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 15:03:44.049 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 15:03:44.060 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 15:03:44.061 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 15:03:44.072 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 15:03:44.280 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 15:03:44.281 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2294 ms
-2019-06-05 15:04:16.288 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 15:04:16.663 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 15:04:16.696 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 15:04:16.710 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 15:04:16.735 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 15:04:16.742 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 35.932 seconds (JVM running for 40.269)
-2019-06-05 16:21:57.646 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 19508 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:21:57.657 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:21:57.709 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:21:57.709 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:21:59.108 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:21:59.128 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:21:59.140 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:21:59.140 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:21:59.149 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:21:59.331 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:21:59.331 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1621 ms
-2019-06-05 16:21:59.911 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:22:00.135 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:22:00.167 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:22:00.181 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:22:00.202 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:22:00.206 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 2.995 seconds (JVM running for 5.627)
-2019-06-05 16:22:55.209 - INFO  [nio-8080-exec-3] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:22:55.209 - INFO  [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:22:55.219 - INFO  [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
-2019-06-05 16:23:40.464 - INFO  [nio-8080-exec-4] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:27:51.401 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 5144 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:27:51.407 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:27:51.454 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:27:51.454 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:27:52.821 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:27:52.835 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:27:52.844 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:27:52.845 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:27:52.854 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:27:53.047 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:27:53.047 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1592 ms
-2019-06-05 16:27:53.636 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:27:53.835 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:27:53.864 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:27:53.875 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:27:53.891 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:27:53.894 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 2.847 seconds (JVM running for 5.733)
-2019-06-05 16:28:20.977 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:28:20.978 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:28:20.984 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 6 ms
-2019-06-05 16:33:14.887 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:34:06.382 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 16728 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:34:06.391 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:34:06.466 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:34:06.466 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:34:07.788 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:34:07.800 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:34:07.809 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:34:07.809 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:34:07.817 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:34:07.985 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:34:07.986 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1519 ms
-2019-06-05 16:34:08.578 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:34:08.793 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:34:08.828 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:34:08.844 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:34:08.862 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:34:08.867 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.054 seconds (JVM running for 5.191)
-2019-06-05 16:34:22.383 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:34:22.383 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:34:22.391 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
-2019-06-05 16:34:28.519 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:35:51.608 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 9824 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:35:51.614 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:35:51.669 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:35:51.669 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:35:52.996 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:35:53.010 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:35:53.018 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:35:53.019 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:35:53.028 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:35:53.198 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:35:53.198 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1529 ms
-2019-06-05 16:35:53.883 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:35:54.092 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:35:54.126 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:35:54.141 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:35:54.159 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:35:54.164 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.535 seconds (JVM running for 6.023)
-2019-06-05 16:36:09.615 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:36:09.616 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:36:09.627 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
-2019-06-05 16:36:25.643 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:40:02.619 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 1608 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:40:02.633 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:40:02.706 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:40:02.707 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:40:04.041 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:40:04.053 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:40:04.062 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:40:04.063 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:40:04.070 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:40:04.264 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:40:04.265 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1558 ms
-2019-06-05 16:40:04.845 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:40:05.056 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:40:05.086 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:40:05.099 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:40:05.116 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:40:05.120 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.257 seconds (JVM running for 5.648)
-2019-06-05 16:40:25.793 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:40:25.793 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:40:25.802 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 9 ms
-2019-06-05 16:40:29.937 - INFO  [nio-8080-exec-1] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:43:40.273 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 19420 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:43:40.280 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:43:40.340 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:43:40.340 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:43:41.642 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:43:41.656 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:43:41.666 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:43:41.667 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:43:41.674 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:43:41.867 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:43:41.868 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1528 ms
-2019-06-05 16:43:42.440 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:43:42.659 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:43:42.693 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:43:42.707 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:43:42.725 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:43:42.729 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 2.956 seconds (JVM running for 6.277)
-2019-06-05 16:43:49.119 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:43:49.119 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:43:49.126 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 7 ms
-2019-06-05 16:43:52.956 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:44:58.114 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 20008 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:44:58.123 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:44:58.187 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:44:58.187 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:44:59.795 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:44:59.841 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:44:59.852 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:44:59.853 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:44:59.861 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:45:00.137 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:45:00.138 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1950 ms
-2019-06-05 16:45:00.746 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:45:00.970 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:45:01.003 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:45:01.016 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:45:01.032 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:45:01.036 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.279 seconds (JVM running for 6.214)
-2019-06-05 16:56:35.125 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:56:35.125 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:56:35.132 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 6 ms
-2019-06-05 16:56:45.474 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:57:31.270 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 8628 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:57:31.278 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:57:31.340 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:57:31.341 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:57:32.687 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:57:32.700 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:57:32.708 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:57:32.709 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:57:32.718 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:57:32.894 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:57:32.895 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1552 ms
-2019-06-05 16:57:33.458 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:57:33.692 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:57:33.721 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:57:33.734 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:57:33.754 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:57:33.758 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 2.99 seconds (JVM running for 5.656)
-2019-06-05 16:57:41.934 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:57:41.935 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:57:41.942 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 7 ms
-2019-06-05 16:58:19.655 - INFO  [nio-8080-exec-1] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 16:59:27.361 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 2312 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:59:27.368 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:59:27.439 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:59:27.440 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:59:29.159 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:59:29.171 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:59:29.180 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:59:29.180 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:59:29.187 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:59:29.448 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:59:29.449 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2002 ms
-2019-06-05 16:59:30.090 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:59:30.337 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:59:30.369 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:59:30.404 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:59:30.458 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:59:30.463 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.838 seconds (JVM running for 6.077)
-2019-06-05 16:59:40.825 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 2028 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 16:59:40.831 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 16:59:40.889 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 16:59:40.890 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 16:59:42.493 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 16:59:42.505 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:59:42.516 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 16:59:42.517 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 16:59:42.527 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 16:59:42.821 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 16:59:42.821 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1931 ms
-2019-06-05 16:59:43.367 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 16:59:43.712 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 16:59:43.789 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 16:59:43.817 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 16:59:43.858 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 16:59:43.872 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.442 seconds (JVM running for 5.527)
-2019-06-05 16:59:48.607 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 16:59:48.608 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 16:59:48.616 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
-2019-06-05 16:59:57.462 - INFO  [nio-8080-exec-1] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 17:01:36.794 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 17596 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 17:01:36.803 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 17:01:36.872 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 17:01:36.872 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 17:01:38.261 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 17:01:38.272 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 17:01:38.281 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 17:01:38.282 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 17:01:38.290 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 17:01:38.474 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 17:01:38.475 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1602 ms
-2019-06-05 17:01:39.062 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 17:01:39.296 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 17:01:39.334 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 17:01:39.346 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 17:01:39.363 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 17:01:39.368 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 2.995 seconds (JVM running for 5.256)
-2019-06-05 17:01:52.345 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 17:01:52.345 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 17:01:52.354 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
-2019-06-05 17:01:57.254 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
-2019-06-05 17:02:09.976 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 11412 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
-2019-06-05 17:02:09.985 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-06-05 17:02:10.041 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-05 17:02:10.042 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-05 17:02:11.666 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2019-06-05 17:02:11.677 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2019-06-05 17:02:11.685 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-06-05 17:02:11.685 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-06-05 17:02:11.692 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
-2019-06-05 17:02:11.856 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-06-05 17:02:11.857 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1815 ms
-2019-06-05 17:02:12.442 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-05 17:02:12.641 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
-2019-06-05 17:02:12.670 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2019-06-05 17:02:12.680 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-06-05 17:02:12.696 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-05 17:02:12.700 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.559 seconds (JVM running for 5.861)
-2019-06-05 17:02:19.155 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-06-05 17:02:19.155 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-06-05 17:02:19.164 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 9 ms
-2019-06-05 17:02:26.870 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
+2019-06-06 14:09:06.557 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 14492 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
+2019-06-06 14:09:06.595 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-06-06 14:09:06.685 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-06 14:09:06.685 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-06 14:09:08.759 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 14:09:08.778 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-06 14:09:08.790 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-06-06 14:09:08.790 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-06-06 14:09:08.800 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
+2019-06-06 14:09:09.028 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-06-06 14:09:09.029 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2343 ms
+2019-06-06 14:09:09.707 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 14:09:09.929 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-06-06 14:09:09.965 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-06-06 14:09:09.980 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-06-06 14:09:09.999 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-06 14:09:10.003 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.984 seconds (JVM running for 6.754)
+2019-06-06 14:09:29.907 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 14:09:29.908 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-06-06 14:09:29.918 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
+2019-06-06 14:09:35.490 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
+2019-06-06 15:03:49.700 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 19308 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
+2019-06-06 15:03:49.713 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-06-06 15:03:49.842 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-06 15:03:49.842 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-06 15:03:51.906 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 15:03:51.919 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-06 15:03:51.929 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-06-06 15:03:51.929 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-06-06 15:03:51.937 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
+2019-06-06 15:03:52.134 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-06-06 15:03:52.134 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2292 ms
+2019-06-06 15:03:53.269 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 15:03:53.720 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-06-06 15:03:53.756 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-06-06 15:03:53.772 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-06-06 15:03:53.792 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-06 15:03:53.796 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 5.521 seconds (JVM running for 8.538)
+2019-06-06 15:04:48.561 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 15:04:48.562 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-06-06 15:04:48.570 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
+2019-06-06 15:04:53.860 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
+2019-06-06 15:11:55.769 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 4392 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
+2019-06-06 15:11:55.777 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-06-06 15:11:55.833 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-06 15:11:55.834 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-06 15:11:57.214 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 15:11:57.228 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-06 15:11:57.238 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-06-06 15:11:57.239 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-06-06 15:11:57.248 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
+2019-06-06 15:11:57.527 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-06-06 15:11:57.527 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2019-06-06 15:11:58.474 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 15:11:58.683 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-06-06 15:11:58.717 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-06-06 15:11:58.733 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-06-06 15:11:58.758 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-06 15:11:58.762 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.459 seconds (JVM running for 5.978)
+2019-06-06 15:12:08.871 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 15:12:08.872 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-06-06 15:12:08.882 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
+2019-06-06 15:12:19.460 - INFO  [nio-8080-exec-2] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
+2019-06-06 15:12:47.295 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting InitpassionCacheApplication on HIH-D-11224 with PID 20940 (E:\initpassion\zed\initpassion-cache\target\classes started by tushenghong01 in E:\initpassion\zed)
+2019-06-06 15:12:47.305 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-06-06 15:12:47.360 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-06 15:12:47.361 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-06 15:12:48.784 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-06-06 15:12:48.798 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-06 15:12:48.807 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-06-06 15:12:48.808 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-06-06 15:12:48.815 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\apache-maven-3.5.3\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;D:\git\arcanist\bin;C:\Program Files\OpenVPN\bin;D:\hadoop-common-2.6.0-bin\hadoop-common-2.6.0-bin-master\bin;D:\hadoop-common-2.2.0-bin-master\bin;C:\Program Files\nodejs\;$HADOOP_HOME\bin;D:\php;D:\software\Microsoft VS Code\bin;E:\curl-7.62.0;C:\Program Files\Java\jdk1.8.0_161\bin;D:\cmder;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Users\tushenghong01\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\tushenghong01\AppData\Roaming\npm;C:\tools\mysql\current\bin;;.]
+2019-06-06 15:12:48.982 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-06-06 15:12:48.982 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1621 ms
+2019-06-06 15:12:49.632 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-06 15:12:49.931 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-06-06 15:12:49.965 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-06-06 15:12:49.978 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-06-06 15:12:49.999 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-06 15:12:50.004 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started InitpassionCacheApplication in 3.156 seconds (JVM running for 5.496)
+2019-06-06 15:12:50.076 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-06 15:12:50.076 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-06-06 15:12:50.085 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
+2019-06-06 15:12:53.602 - INFO  [nio-8080-exec-1] c.a.d.s.l.Log4j2Impl           : {dataSource-1} inited
