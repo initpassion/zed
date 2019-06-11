@@ -6,11 +6,13 @@
 
 package com.initpassion.cache.policy.guava;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
+import com.github.pagehelper.Page;
 import org.springframework.stereotype.Component;
 
 import com.google.common.base.Ticker;
@@ -53,6 +55,12 @@ public class GuavaCacheManager {
                         return goodsInfoService.getByGoodCode(goodCode);
                     }
                 });
+        //第一次启动全部加载
+
+        Page<GoodsInfo> page = goodsInfoService.pageQuery(1, 0);
+        if (Objects.nonNull(page)){
+            page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(this::getByCode);
+        }
     }
 
     /**
