@@ -6,9 +6,20 @@
 
 package com.initpassion.cache.policy.caffeine;
 
+import com.github.benmanes.caffeine.cache.CacheLoader;
+import com.github.benmanes.caffeine.cache.Caffeine;
+import com.github.benmanes.caffeine.cache.LoadingCache;
+import com.github.benmanes.caffeine.cache.Ticker;
+import com.github.pagehelper.Page;
+import com.google.common.cache.CacheBuilder;
 import com.initpassion.cache.bo.GoodsInfo;
 import com.initpassion.cache.policy.Cache;
+import com.initpassion.cache.service.GoodsInfoService;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
+import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author initpassion
@@ -16,11 +27,34 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class CaffeineCacheManager implements Cache {
-    @Override public void init() {
-        
+
+    private LoadingCache<String, GoodsInfo> cache;
+
+    @Resource
+    private GoodsInfoService goodsInfoService;
+
+    @Override
+    public void init() {
+        cache = Caffeine.newBuilder()
+                // 最大缓存10000个对象
+                .maximumSize(10000)
+                // 1分钟后缓存失效
+                .expireAfterWrite(1, TimeUnit.MINUTES)
+                // 使用SoftReference对象封装value, 使得内存不足时，自动回收
+                .softValues()
+                // 定义缓存对象失效的时间精度为纳秒级
+                .ticker(Ticker.systemTicker())
+                // 数据的加载
+                .build(goodCode -> goodsInfoService.getByGoodCode(goodCode));
+        //第一次启动全部加载
+        Page<GoodsInfo> page = goodsInfoService.pageQuery(1, 0);
+        if (Objects.nonNull(page)){
+            page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(this::get);
+        }
     }
 
-    @Override public GoodsInfo get(String code) {
-        return null;
+    @Override
+    public GoodsInfo get(String code) {
+        return cache.get(code);
     }
 }
