@@ -18,6 +18,8 @@ import com.initpassion.cache.bo.GoodsInfo;
 import com.initpassion.cache.policy.guava.GuavaCacheManager;
 import com.initpassion.cache.service.GoodsInfoService;
 
+import java.util.Objects;
+
 /**
  * @author tushenghong01
  * @version 2019-05-14
@@ -39,7 +41,11 @@ public class GoodsInfoController {
 
     @RequestMapping(value = "pageQuery")
     public void pageQuery(Integer pageNum, Integer pageSize) {
+        if (Objects.isNull(pageSize)){
+            //查全部
+            pageSize = 0;
+        }
         Page<GoodsInfo> page = goodsInfoService.pageQuery(pageNum, pageSize);
-        page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(cacheManager::getByCode);
+        page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(cacheManager::get);
     }
 }

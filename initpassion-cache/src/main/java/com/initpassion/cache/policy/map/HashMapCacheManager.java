@@ -9,6 +9,7 @@ package com.initpassion.cache.policy.map;
 import com.github.pagehelper.Page;
 import com.google.common.collect.Maps;
 import com.initpassion.cache.bo.GoodsInfo;
+import com.initpassion.cache.policy.Cache;
 import com.initpassion.cache.service.GoodsInfoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -31,7 +32,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 @Component
 @Slf4j
-public class HashMapCacheManager {
+public class HashMapCacheManager implements Cache {
 
     /**
      * 默认更新间隔为1分钟
@@ -50,12 +51,6 @@ public class HashMapCacheManager {
     private GoodsInfoService goodsInfoService;
 
 
-
-    /**
-     * 业务与策略集的配置
-     */
-    private static Map<String, GoodsInfo> cache = Maps.newHashMap();
-
     public HashMapCacheManager() {
         this(DEFAULT_SCHEDULE_INTERVAL);
     }
@@ -64,6 +59,7 @@ public class HashMapCacheManager {
         this.scheduleInterval = scheduleInterval > 0 ? scheduleInterval : DEFAULT_SCHEDULE_INTERVAL;
     }
 
+    @Override
     @PostConstruct
     public void init(){
         log.info("HashMapCache Task refresh begin...");
@@ -110,6 +106,11 @@ public class HashMapCacheManager {
             page.getResult().stream().forEach(HashMapCache::add);
         }
 
+    }
+
+    @Override
+    public GoodsInfo get(String code) {
+        return HashMapCache.get(code);
     }
 }
 

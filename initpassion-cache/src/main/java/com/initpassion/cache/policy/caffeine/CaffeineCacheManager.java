@@ -6,6 +6,8 @@
 
 package com.initpassion.cache.policy.caffeine;
 
+import com.initpassion.cache.bo.GoodsInfo;
+import com.initpassion.cache.policy.Cache;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,5 +15,12 @@ import org.springframework.stereotype.Component;
  * @version 2019-06-11
  */
 @Component
-public class CaffeineCacheManager {
+public class CaffeineCacheManager implements Cache {
+    @Override public void init() {
+        
+    }
+
+    @Override public GoodsInfo get(String code) {
+        return null;
+    }
 }

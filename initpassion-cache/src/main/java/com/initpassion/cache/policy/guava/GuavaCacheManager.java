@@ -13,6 +13,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 import com.github.pagehelper.Page;
+import com.initpassion.cache.policy.Cache;
 import org.springframework.stereotype.Component;
 
 import com.google.common.base.Ticker;
@@ -30,13 +31,14 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Component
 @Slf4j
-public class GuavaCacheManager {
+public class GuavaCacheManager implements Cache {
 
     @Resource
     private GoodsInfoService goodsInfoService;
 
     private LoadingCache<String, GoodsInfo> cache;
 
+    @Override
     @PostConstruct
     public void init() {
         cache = CacheBuilder.newBuilder()
@@ -59,7 +61,7 @@ public class GuavaCacheManager {
 
         Page<GoodsInfo> page = goodsInfoService.pageQuery(1, 0);
         if (Objects.nonNull(page)){
-            page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(this::getByCode);
+            page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(this::get);
         }
     }
 
@@ -69,7 +71,8 @@ public class GuavaCacheManager {
      * @param code
      * @return
      */
-    public GoodsInfo getByCode(String code) {
+    @Override
+    public GoodsInfo get(String code) {
         return cache.getUnchecked(code);
     }
 }
