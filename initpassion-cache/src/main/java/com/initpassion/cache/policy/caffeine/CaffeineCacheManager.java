@@ -6,20 +6,21 @@
 
 package com.initpassion.cache.policy.caffeine;
 
-import com.github.benmanes.caffeine.cache.CacheLoader;
+import java.util.Objects;
+import java.util.concurrent.TimeUnit;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Component;
+
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.benmanes.caffeine.cache.LoadingCache;
 import com.github.benmanes.caffeine.cache.Ticker;
 import com.github.pagehelper.Page;
-import com.google.common.cache.CacheBuilder;
 import com.initpassion.cache.bo.GoodsInfo;
 import com.initpassion.cache.policy.Cache;
 import com.initpassion.cache.service.GoodsInfoService;
-import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
-import java.util.Objects;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author initpassion
@@ -33,6 +34,7 @@ public class CaffeineCacheManager implements Cache {
     @Resource
     private GoodsInfoService goodsInfoService;
 
+    @PostConstruct
     @Override
     public void init() {
         cache = Caffeine.newBuilder()
@@ -46,9 +48,9 @@ public class CaffeineCacheManager implements Cache {
                 .ticker(Ticker.systemTicker())
                 // 数据的加载
                 .build(goodCode -> goodsInfoService.getByGoodCode(goodCode));
-        //第一次启动全部加载
+        // 第一次启动全部加载
         Page<GoodsInfo> page = goodsInfoService.pageQuery(1, 0);
-        if (Objects.nonNull(page)){
+        if (Objects.nonNull(page)) {
             page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(this::get);
         }
     }

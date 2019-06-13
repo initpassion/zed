@@ -6,6 +6,8 @@
 
 package com.initpassion.cache.controller;
 
+import java.util.Objects;
+
 import javax.annotation.Resource;
 
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.github.pagehelper.Page;
 import com.initpassion.cache.bo.GoodsInfo;
+import com.initpassion.cache.policy.caffeine.CaffeineCacheManager;
 import com.initpassion.cache.policy.guava.GuavaCacheManager;
+import com.initpassion.cache.policy.map.HashMapCacheManager;
 import com.initpassion.cache.service.GoodsInfoService;
-
-import java.util.Objects;
 
 /**
  * @author tushenghong01
@@ -32,7 +34,13 @@ public class GoodsInfoController {
     private GoodsInfoService goodsInfoService;
 
     @Resource
-    private GuavaCacheManager cacheManager;
+    private GuavaCacheManager guavaCacheManager;
+
+    @Resource
+    private HashMapCacheManager hashMapCacheManager;
+
+    @Resource
+    private CaffeineCacheManager caffeineCacheManager;
 
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
     public void insert(@RequestBody GoodsInfo goodsInfo) {
@@ -41,11 +49,15 @@ public class GoodsInfoController {
 
     @RequestMapping(value = "pageQuery")
     public void pageQuery(Integer pageNum, Integer pageSize) {
-        if (Objects.isNull(pageSize)){
-            //查全部
+        if (Objects.isNull(pageSize)) {
+            // 查全部
             pageSize = 0;
         }
         Page<GoodsInfo> page = goodsInfoService.pageQuery(pageNum, pageSize);
-        page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(cacheManager::get);
+        page.getResult().stream().map(GoodsInfo::getGoodsCode).forEach(code -> {
+            guavaCacheManager.get(code);
+            hashMapCacheManager.get(code);
+            caffeineCacheManager.get(code);
+        });
     }
 }
