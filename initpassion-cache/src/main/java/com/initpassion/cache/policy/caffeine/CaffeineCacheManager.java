@@ -6,12 +6,10 @@
 
 package com.initpassion.cache.policy.caffeine;
 
-import com.github.benmanes.caffeine.cache.CacheLoader;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.benmanes.caffeine.cache.LoadingCache;
 import com.github.benmanes.caffeine.cache.Ticker;
 import com.github.pagehelper.Page;
-import com.google.common.cache.CacheBuilder;
 import com.initpassion.cache.bo.GoodsInfo;
 import com.initpassion.cache.policy.Cache;
 import com.initpassion.cache.service.GoodsInfoService;
