@@ -22,7 +22,7 @@
 
 ## 配置ssh
 
--  vim /Users/tushenghong01/.ssh/config,输入以下配置
+-  vim /Users/username/.ssh/config,输入以下配置
 
   - ```
     Host github.com
@@ -33,20 +33,16 @@
     Port 443
     
     Host jumper
-       #nisp-jumper1.hz.163.org
-       Hostname 123.58.180.66
-       User tushenghong01
-       Port 1046
+       Hostname 11.11.111.22
+       User username
+       Port 1011
        ForwardAgent yes
     
-    Host *.163.org
-       User tushenghong01
-       Port 1046
+    Host 
+       User username
+       Port 1011
        ProxyCommand ssh jumper exec nc -w 10 %h %p 2>/dev/null
     ```
 
 - mysql 连接
-
-  - ```ssh -fCPN -L 6161:10.172.145.155:6000 -p 1046 tushenghong01@nisp37.dg.163.org```
-  - mysql -h127.0.0.1 -P6161 -ung_online -png_online
 
